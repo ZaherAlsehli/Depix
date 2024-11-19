@@ -25,10 +25,14 @@
 		function toggleTheme() {
 			if (localStorage.getItem('tp_theme_scheme') === 'tp-theme-dark') {
 				tp_set_scheme('tp-theme-light');
+                // $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
                 $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
+
 			} else {
 				tp_set_scheme('tp-theme-dark');
+                // $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
                 $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
+
 			}
 		}
 
@@ -39,19 +43,24 @@
 
 			if(htmlAttr == 'tp-theme-light'){
 				tp_set_scheme('tp-theme-light');
+                // $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
                 $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
+
 				document.getElementsByClassName('tp-theme-toggler').checked = false;
 			}
 
 			else if (localStorage.getItem('tp_theme_scheme') === 'tp-theme-light') {
 				
                 tp_set_scheme('tp-theme-light');
+                // $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
                 $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
+
 				document.getElementsByClassName('tp-theme-toggler').checked = false;
 
 			} else {
 				tp_set_scheme('tp-theme-dark');
 				document.getElementsByClassName('tp-theme-toggler').checked = true;
+                // $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
                 $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
 			}
 		}
