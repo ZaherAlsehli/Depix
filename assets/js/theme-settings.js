@@ -26,12 +26,12 @@
 			if (localStorage.getItem('tp_theme_scheme') === 'tp-theme-dark') {
 				tp_set_scheme('tp-theme-light');
                 // $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
-                $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
+                $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 
 			} else {
 				tp_set_scheme('tp-theme-dark');
                 // $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
-                $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
+                $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 
 			}
 		}
@@ -44,7 +44,7 @@
 			if(htmlAttr == 'tp-theme-light'){
 				tp_set_scheme('tp-theme-light');
                 // $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
-                $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
+                $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 
 				document.getElementsByClassName('tp-theme-toggler').checked = false;
 			}
@@ -53,7 +53,7 @@
 				
                 tp_set_scheme('tp-theme-light');
                 // $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
-                $('.themepure-theme-toggle').removeClass('dark-active').addClass('light-active');
+                $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 
 				document.getElementsByClassName('tp-theme-toggler').checked = false;
 
@@ -61,7 +61,7 @@
 				tp_set_scheme('tp-theme-dark');
 				document.getElementsByClassName('tp-theme-toggler').checked = true;
                 // $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
-                $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
+                $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 			}
 		}
 		tp_init_theme();
