@@ -29,7 +29,8 @@
                 $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 
 			} else {
-				tp_set_scheme('tp-theme-dark');
+				// tp_set_scheme('tp-theme-dark');
+				tp_set_scheme('tp-theme-light');
                 // $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
                 $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
 
@@ -58,7 +59,8 @@
 				document.getElementsByClassName('tp-theme-toggler').checked = false;
 
 			} else {
-				tp_set_scheme('tp-theme-dark');
+				// tp_set_scheme('tp-theme-dark');
+				tp_set_scheme('tp-theme-light');
 				document.getElementsByClassName('tp-theme-toggler').checked = true;
                 // $('.themepure-theme-toggle').removeClass('light-active').addClass('dark-active');
                 $('.themepure-theme-toggle').removeClass('light-active').addClass('light-active');
