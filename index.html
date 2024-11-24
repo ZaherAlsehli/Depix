@@ -176,7 +176,7 @@
                               <a href="index.html">Home</a>
                            </li>
                         
-                           <li class="has-dropdown"><a href="">Services</a>
+                           <li class="has-dropdown"><a href="" onclick="return false;">Services</a>
                               <ul class="tp-submenu submenu">
                                  <li><a href="Business Plan.html">Business Plan</a></li>
                                  <li><a href="Social Media.html">Social Media</a></li>
@@ -198,8 +198,8 @@
                                  <a href="index.html">Home</a>
                               </li>
                              
-                              <li class="has-dropdown">
-                                 <a href="">Services</a>
+                              <li class="has-dropdown"><a href="" onclick="return false;">Services</a>
+
                                  <ul class="tp-submenu submenu">
                                     <li><a href="Business Plan.html">Business Plan</a></li>
                                     <li><a href="Social Media.html">Social Media</a></li>
@@ -296,8 +296,8 @@
                                  <a href="index.html">Home</a>
                               </li>
                               
-                              <li class="has-dropdown">
-                                 <a  href="">Services</a>
+                              <li class="has-dropdown"><a href="" onclick="return false;">Services</a>
+
                                  <ul class="tp-submenu submenu">
                                     <li><a href="Business Plan.html">Business Plan</a></li>
                                     <li><a href="Social Media.html">Social Media</a></li>
@@ -359,14 +359,8 @@
          <div class="porfolio-details__area porfolio-details__color-customize p-relative smooth cursor-style">
             <a href="#porfolio-details">
                <div class="tp-hero-3__scrool-down z-index-5">
-                  <span class="text">Scroll</span>
-                  <span>
-                     <svg width="14" height="93" viewBox="0 0 14 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 85.8995C10.1308 85.8995 6.9999 88.9319 6.9999 92.6793" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M7 92.6793C7 88.9319 3.86911 85.8995 -0.000102413 85.8995" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M7 0L7 90" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                     </svg>
-                  </span>
+                  
+                  
                </div>
             </a>
             <div class="porfolio-details__hero-img">
@@ -374,6 +368,17 @@
                      <source src="assets/video2.mp4" type="video/mp4">
                   </video>
            </div>
+           <script>
+            var video = document.querySelector('.play-video');
+        
+            video.addEventListener('click', function() {
+                if (video.muted) {
+                    video.muted = false;
+                } else {
+                    video.muted = true;
+                }
+            });
+        </script>
          </div>
 
   <!-- about area start -->
@@ -388,7 +393,7 @@
             </div>
             <div class="col-xl-7 col-lg-8 col-md-8">
                <div class="tp-about-4-title-box">
-                  <span class="tp-section-subtitle-bg ms-3">Achievements key</span>
+                  
 
                   <h2 class="tp-section-title-5 mb-20 tp_text_invert">DEPIX</h2>
                   <p class="tp_text_invert">
